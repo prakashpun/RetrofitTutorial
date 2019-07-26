@@ -10,7 +10,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClientInstance {
 
     private static Retrofit retrofit;
-    private static final String BASE_URL = "https://jsonplaceholder.typicode.com";
+    // changed the https to http to minimize the chances of network failure . 
+    private static final String BASE_URL = "http://jsonplaceholder.typicode.com";
 
     public static Retrofit getRetrofitInstance() {
         if (retrofit == null) {
